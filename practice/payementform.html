@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payement form</title>
+</head>
+<body>
+    <form>
+        <h1>Payement form</h1>
+        <p>Required fields are followed by *.</p>
+        <section>
+            <h2>contact information</h2>
+            <fieldset>
+                <legend>Title</legend>
+               
+                <input type="radio" name="title" value="Ace" >Ace <br>
+                <input  type="radio" name="title2" value="King" >King <br>
+                <input  type="radio" name="title" value=" Queen" >Queen <br>
+               
+            </fieldset>
+            <div>
+                <div><label for="firstname" >Name:</label></div>
+               <div> <input type="text" name="firstname" placeholder="" value="enter ur name" required /></div>
+            </div>
+            <div>
+                <div><label for="email">E-mail:</label> </div>
+                <div><input  type="email" name="email" placeholder="Email address"  required/></div>
+
+            </div>
+            <div>
+                <div>
+                    <label for="password">Password:</label>
+                </div>
+                <div><input type="password" name="password" placeholder="password" required </div>
+            </div>
+
+        </section>
+        <section>
+            <h2>Payement information</h2>
+            <div>
+                <label for="cardtype">cardtype:</label>
+                <select id="cardtype">
+                    <option value="mastercard">Mastercard</option>
+                    <option value="amex">American Express</option>
+                    <option value="vc">Visa</option>
+                </select>
+            </div>
+            <div>
+                <div>
+                    <label for="cardnumber">Card Number</label>
+                </div>
+                <div>
+                    <input type="number"  name="cardnumber:" placeholder="enter card number" required>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <label for="date">Expiredate:</label>
+                </div>
+                <div>
+                    <input type="date" name="date" placeholder="" required>
+                </div>
+            </div>
+
+        </section>
+        <br>
+        <input type="submit" name="validate" />
+    </form>
+</body>
+</html>
